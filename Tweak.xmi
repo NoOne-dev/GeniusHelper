@@ -237,7 +237,7 @@ HOOK(SpringBoard)
     
     [OBJCIPC registerIncomingMessageFromAppHandlerForMessageName:@"io.c0ldra1n.genius-helper-dpkg-list" handler:^NSDictionary *(NSDictionary *req){
         
-        system("dpkg -l > /tmp/ghdpkgl");
+        system("dpkg --get-selections > /tmp/ghdpkgl");
         
         NSDictionary *send = @{@"dpkg":[NSString stringWithContentsOfFile:@"/tmp/ghdpkgl" encoding:NSUTF8StringEncoding error:nil]};
         
