@@ -138,7 +138,7 @@ NEW()
                         
                         dispatch_async(dispatch_get_main_queue(), ^{
                             
-                            self.textInputbar.textView.text = [NSString stringWithFormat:@"Ghostbin to my Tweak List:\n%@\nSent with GeniusHelper[version 0.9.2] by @c0ldra1n#4690", [ghostbinURL absoluteString]];
+                            self.textInputbar.textView.text = [NSString stringWithFormat:@"Ghostbin to my Tweak List:\n%@\nSent with GeniusHelper[version 0.9.3] by @c0ldra1n#4690 edited by @#5956", [ghostbinURL absoluteString]];
                             
                             [self didPressRightButton:nil];
                             
@@ -154,7 +154,7 @@ NEW()
                     
                 }else{
                     
-                    self.textInputbar.textView.text = [NSString stringWithFormat:@"Something went wrong.\nInfo: %@\n\nSent with GeniusHelper[version 0.9.2] by @c0ldra1n#4690", dpkgStrDict];
+                    self.textInputbar.textView.text = [NSString stringWithFormat:@"Something went wrong.\nInfo: %@\n\nSent with GeniusHelper[version 0.9.3] by @c0ldra1n#4690 edited by @#5956", dpkgStrDict];
                     
                     [self didPressRightButton:nil];
                     
